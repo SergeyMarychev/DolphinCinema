@@ -1,0 +1,31 @@
+﻿.tippy-box[data-theme~="seat"] {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    font-feature-settings: "tnum" on, "lnum" on;
+    color: white;
+    background-color: black;
+    padding: 8px;
+    border-radius: 8px;
+    width: 120px;
+    text-align: center;
+    opacity: 1;
+
+    &[data-placement^="top"] > .tippy-arrow::before {
+        border-top-color: white;
+    }
+
+    &[data-placement^="bottom"] > .tippy-arrow::before {
+        border-bottom-color: white;
+    }
+
+    &[data-placement^="left"] > .tippy-arrow::before {
+        border-left-color: white;
+    }
+
+    &[data-placement^="right"] > .tippy-arrow::before {
+        border-right-color: white;
+    }
+}

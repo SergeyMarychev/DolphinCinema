@@ -1,0 +1,7 @@
+﻿@using DolphinCinema.Models.Home;
+@model IEnumerable<PosterItemViewModel> 
+
+@foreach (var item in Model)
+{
+    @await Html.PartialAsync("_PosterItem", item);
+}

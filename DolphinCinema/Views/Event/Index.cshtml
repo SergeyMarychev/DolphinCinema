@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Новости";
+    ViewBag.CurrentPage = PageNames.Event;
+}
+
+@section UpperMenu{
+    <vc:slider />
+}
+<vc:events is-show-all-title="false"/>
+
+<script src="~/js/slider.js" asp-append-version="true"></script>
+<script src="~/js/event.js" asp-append-version="true"></script>

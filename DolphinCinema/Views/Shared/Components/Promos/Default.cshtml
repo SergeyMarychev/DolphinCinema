@@ -1,0 +1,21 @@
+﻿@using DolphinCinema.Views.Shared.Components.Promos
+@model PromosViewModel
+
+<div class="promo">
+	<p class="promo__headline">Акции и скидки</p>
+	<div class="promo__container">
+		@foreach(var item in Model.Items)
+		{
+			<div class="promo__card">
+				<a class="promo__link" asp-action="PromoItem" asp-controller="Promo" asp-route-name="@item.Name">
+					<div class="promo__img-card">
+						<img class="promo__img"
+							 src="@item.PathToImage"
+							 alt="" />
+					</div>
+					<h1 class="promo__title">@item.DisplayName</h1>
+				</a>				
+			</div>
+		}
+	</div>
+</div>

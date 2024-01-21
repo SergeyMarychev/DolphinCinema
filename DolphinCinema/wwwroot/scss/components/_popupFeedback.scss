@@ -1,0 +1,154 @@
+﻿.popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.popup[hidden] {
+    display: none;
+}
+
+.popup__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+}
+
+.popup__container {
+    z-index: 1;
+    max-width: 80%;
+}
+
+.popup__content {
+    max-height: 740px;
+    width: 620px;
+    background: #fff;
+    color: #262626;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.popup__content-container {
+    padding: 12px 24px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.popup__content-header {
+    position: relative;
+    font-weight: 500;
+    line-height: 28px;
+    font-size: 1.25rem;
+    text-align: center;
+    border-bottom: 1px solid #e3e9eb;
+    padding: 20px;
+}
+
+.popup__exit {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: opacity .3s,transform .3s,-webkit-transform .3s;
+    width: 20px;
+    height: 20px;
+}
+
+.popup__exit-img {
+    display: inline-block;
+    vertical-align: top;
+    transition: background .3s;
+    width: 20px;
+    height: 20px;
+}
+
+.popup__content-body {
+    padding: 12px 24px;
+}
+
+.popup__content-description {
+    line-height: 20px;
+    font-size: .875rem;
+    color: #616161;
+    max-width: 576px;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.popup__content-form:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.popup__content-name {
+    line-height: 20px;
+    font-size: .875rem;
+    color: #262626;
+    margin-bottom: 3px;
+    text-align: start;
+}
+
+.popup__content-inputContainer:not(:first-child) {
+    margin-top: 5px;
+}
+
+.input {
+    width: 100%;
+    border: 1px solid #c9c9c9;
+    padding: 10px 15px;
+    transition: border-color .3s;
+    font-family: Roboto;
+    line-height: 20px;
+    font-size: .875rem;
+    color: #262626;
+}
+
+.textarea {
+    width: 100%;
+    min-height: 120px;
+    border: 1px solid #c9c9c9;
+    padding: 10px 15px;
+    transition: border-color .3s;
+    resize: none;
+    line-height: 20px;
+    font-size: .875rem;
+    color: #262626;
+}
+
+.popup__content-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+.btn__cancel {
+    padding: 12px 24px;
+    font-size: 18px;
+    height: initial;
+    cursor: pointer;
+}
+
+.btn__send {
+    padding: 12px 24px;
+    font-size: 18px;
+    height: initial;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #419cec;
+        border-color: #419cec;
+    }
+}

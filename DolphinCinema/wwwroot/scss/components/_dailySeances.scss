@@ -1,0 +1,115 @@
+﻿.dailySeances {
+    margin-top: 4px;
+    background-color: white;
+    border-radius: 8px;
+
+    &__list {
+        padding: 0 40px;
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        padding: 16px 0;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+        outline: none;
+        border-bottom: 1px solid #e6e6e6;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &:hover {
+            background-color: #F8F8FF;
+        }
+    }
+
+    &__time {
+        background-color: #87ceeb;
+        color: black;
+        width: 64px;
+        height: 32px;
+        padding: 0 12px;
+        line-height: 32px;
+        border-radius: 6px;
+    }
+
+    &__info {
+        margin-left: 16px;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: start;
+    }
+
+    &__age-genres {
+        display: flex;
+        margin: 8px 0;
+    }
+
+    &__age {
+        margin-right: 4px;
+        display: inline-block;
+        padding: 0 6px;
+        line-height: 20px;
+        border-radius: 4px;
+        background-color: #f2f2f5;
+        color: #727276;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    &__genre-list {
+        display: flex;
+    }
+
+    &__genre-item {
+        margin-right: 4px;
+        display: inline-block;
+        padding: 0 6px;
+        line-height: 20px;
+        border-radius: 4px;
+        background-color: #f2f2f5;
+        color: #727276;
+        font-size: 12px;
+        font-weight: 300;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__other-info {
+        display: flex;
+
+        & .dailySeances__format::after,
+        & .dailySeances__price::after {
+            content: '\2022';
+            margin-left: 8px;
+        }
+    }
+
+    &__format {
+        color: #727276;
+        font-size: .75rem;
+        font-weight: 300;
+        margin-right: 8px;
+    }
+
+    &__price {
+        color: #727276;
+        font-size: .75rem;
+        font-weight: 300;
+        margin-right: 8px;
+    }
+
+    &__hall {
+        color: #727276;
+        font-size: .75rem;
+        font-weight: 300;
+    }
+}

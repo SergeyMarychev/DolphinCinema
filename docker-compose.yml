@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  dolphincinema:
+    image: ${DOCKER_REGISTRY-}dolphincinema
+    build:
+      context: .
+      dockerfile: DolphinCinema/Dockerfile

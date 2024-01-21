@@ -1,0 +1,55 @@
+﻿@{
+	ViewData["Title"] = "Сеансы";
+    ViewBag.CurrentPage = PageNames.Seance;
+}
+
+@section UpperMenu{
+    <vc:slider />
+}
+
+<vc:time-menu/>
+
+<div class="dailySeances">
+    <div class="dailySeances__list">
+        <div class="dailySeances__item">
+            <div class="dailySeances__time">12:00</div>
+            <div class="dailySeances__info">
+                <div class="dailySeances__title">Паркер</div>
+                <div class="dailySeances__age-genres">
+                    <div class="dailySeances__age">5+</div>
+                    <div class="dailySeances__genre-list">
+                        <div class="dailySeances__genre-item">ПРИКЛЮЧЕНИЯ</div>
+                        <div class="dailySeances__genre-item">БОЕВИК</div>
+                    </div>
+                </div>
+                <div class="dailySeances__other-info">
+                    <div class="dailySeances__format">2D</div>
+                    <div class="dailySeances__price">300 руб.</div>
+                    <div class="dailySeances__hall">Зал 1</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dailySeances__item">
+            <div class="dailySeances__time">12:00</div>
+            <div class="dailySeances__info">
+                <div class="dailySeances__title">Паркер</div>
+                <div class="dailySeances__age-genres">
+                    <div class="dailySeances__age">5+</div>
+                    <div class="dailySeances__genre-list">
+                        <div class="dailySeances__genre-item">ПРИКЛЮЧЕНИЯ</div>
+                        <div class="dailySeances__genre-item">БОЕВИК</div>
+                    </div>
+                </div>
+                <div class="dailySeances__other-info">
+                    <div class="dailySeances__format">2D</div>
+                    <div class="dailySeances__price">300 руб.</div>
+                    <div class="dailySeances__hall">Зал 1</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/slider.js" asp-append-version="true"></script>
+<script src="~/js/time.js" asp-append-version="true"></script>

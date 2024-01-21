@@ -1,0 +1,11 @@
+﻿@{
+	ViewData["Title"] = "Акции и скидки";
+	ViewBag.CurrentPage = PageNames.Promo;
+}
+
+@section UpperMenu{
+	<vc:slider />
+}
+<vc:promos/>
+
+<script src="~/js/slider.js" asp-append-version="true"></script>

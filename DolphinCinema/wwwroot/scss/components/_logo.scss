@@ -1,0 +1,9 @@
+.logo__img {
+	height: 65px;
+	margin-right: 40px;
+
+	& .logo {
+		cursor: pointer;
+		transition: 0.5s;
+	}
+}

@@ -1,0 +1,14 @@
+.readMoreBtn {
+	&.btn {
+		width: 125px;
+		margin: 30px 0 0 0px;
+	}
+
+	&__link {
+		&.btn__link {
+			color: black;
+			text-transform: none;
+			font-size: 12px;
+		}
+	}
+}

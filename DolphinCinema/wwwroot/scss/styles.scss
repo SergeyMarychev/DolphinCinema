@@ -1,0 +1,91 @@
+// common
+@import './common/_variables.scss', 
+		'./common/_extends.scss', 
+		'./common/_helpers.scss', 
+		'./common/_normalize.scss', 
+		'./common/_fonts.scss';
+
+// components
+@import './components/_adress.scss',
+		'./components/_btn.scss',
+	    './components/_poster.scss',
+		'./components/_dropdown.scss',
+		'./components/_footer.scss',
+		'./components/_header.scss',
+		'./components/_icons.scss',
+		'./components/_logo.scss',
+		'./components/_menu.scss',
+		'./components/_pagination.scss',
+		'./components/_phone.scss',
+		'./components/_readMoreBtn.scss',
+		'./components/_search.scss',
+		'./components/_slider.scss',
+		'./components/_time.scss',
+		'./components/_timeBtn.scss',
+		'./components/_promo.scss',
+		'./components/_promoItem.scss',
+		'./components/_event.scss',
+		'./components/_eventItem.scss',
+        './components/_cinema.scss',
+		'./components/_release.scss',
+        './components/_popupFeedback.scss',
+		'./components/_dailySeances.scss',
+		'./components/_login.scss',
+		'./components/_hall.scss',
+		'./components/_tabs.scss',
+		'./components/_modal.scss',
+		'./components/_toast.scss',
+		'./components/_poster-modal.scss',
+		'./components/_tippy.scss',
+		'./components/_ticket-cards.scss';
+
+* {
+	font-family: 'Roboto';
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+}
+
+.container {
+	padding: 0 250px;
+}
+
+@media screen and (max-width: 1400px) {
+	.container {
+		padding: 0 20px;
+	}
+}
+
+@media screen and (min-width: 1500px) {
+	.container {
+		padding: 0 50px;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	.container {
+		padding: 0 100px;
+	}
+}
+
+@media screen and (min-width: 1700px) {
+	.container {
+		padding: 0 150px;
+	}
+}
+
+@media screen and (min-width: 1800px) {
+	.container {
+		padding: 0 200px;
+	}
+}
+
+@media screen and (min-width: 1900px) {
+	.container {
+		padding: 0 250px;
+	}
+}

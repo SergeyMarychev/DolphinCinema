@@ -1,0 +1,53 @@
+﻿.cinema {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    border-radius: 8px;
+    padding: 20px 0;
+
+    &__container {
+        margin-bottom: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        box-sizing: border-box;
+    }
+
+    &__title {
+        font-size: 24px;
+    }
+
+    &__description {
+        font-size: 16px;
+    }
+
+    &__gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 0 40px;
+
+        .cinema__image {
+            width: 255px;
+            height: 150px;
+            margin-right: 9px;
+            margin-top: 9px;
+            transition: all 1s;
+            cursor: pointer;
+
+            &:hover {
+                filter: brightness(1.2);
+                border-radius: 8px;
+                transform: scale(1.05);
+            }
+
+            &.active {
+                transform: scale(3);
+                z-index: 1;
+                position: relative;
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+﻿@using DolphinCinema.Models.Seances;
+@model SeanceModalViewModel
+
+<div class="modal__header">
+	<div class="modal__title">@Model.Title</div>
+	<div class="modal__exit">
+		<img class="modal__exit-img" src="~/images/popup__exit.png" />
+	</div>
+	<div class="poster-modal__date">@(Model.Date). Кинотеатр DolphinCinema</div>
+	<div class="poster__btn-list">
+		@foreach (var item in Model.Seances)
+		{
+			<div class="poster__btn-container">
+				<button class="poster__btn">
+					<div class="poster__btn-time">@item.Time</div>
+					<div class="poster__btn-details">
+						<div class="poster__btn-text">@item.Format</div>
+						<div class="poster__btn-price">@item.Price руб.</div>
+					</div>
+				</button>
+				<div class="poster__btn-hall">@item.Hall</div>
+			</div>
+		}
+	</div>
+</div>
+
+<div class="modal__body">
+	<div class="hall">
+		<div class="hall__grid">
+			<div class="display">Экран</div>
+			<div class="hall__template">
+				@foreach (var row in Model.Seats.GroupBy(s => s.Row))
+				{
+					<div class="row">
+						@foreach (var seat in row)
+						{
+							<div class="seat" 
+									data-title="@seat.Row ряд, @seat.Number место @seat.Price руб."
+									data-row="@seat.Row" 
+									data-number="@seat.Number" 
+									data-price="@seat.Price">
+								<span class="seat__number">@seat.Number</span>
+							</div>
+						}
+					</div>
+				}
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal__footer">
+	<div class="ticket-cards"></div>
+	<div class="btn">
+		<a class="btn__link" href="#">Места не выбраны</a>
+	</div>
+</div>

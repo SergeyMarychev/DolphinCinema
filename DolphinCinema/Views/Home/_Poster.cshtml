@@ -1,0 +1,13 @@
+﻿@using DolphinCinema.Models.Home;
+@model PosterViewModel
+
+<vc:time-menu/>
+
+<div class="poster" id="posterItems">
+    @await Html.PartialAsync("_PosterItems", Model.Items)
+</div>
+
+<div class="modal poster-modal" id="posterModal" hidden>
+	<div class="modal__overlay"></div>
+	<div class="modal__content"></div>
+</div>

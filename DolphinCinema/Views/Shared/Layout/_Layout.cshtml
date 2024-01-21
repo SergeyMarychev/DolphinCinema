@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DolphinCinema</title>    
+    
+	@await Html.PartialAsync("_Styles.cshtml")
+</head>
+<body>    
+	<div class="container">
+		@await Html.PartialAsync("_Header.cshtml")	
+
+		<section class="main">
+			@await RenderSectionAsync("UpperMenu", required: false)
+			@await Html.PartialAsync("_Menu.cshtml")
+			
+			@RenderBody()
+		</section>
+		
+		@await Html.PartialAsync("_Footer.cshtml")
+	</div>	
+	@await Html.PartialAsync("_Scripts.cshtml")
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

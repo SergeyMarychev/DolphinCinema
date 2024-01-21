@@ -1,0 +1,140 @@
+﻿.tabs__items {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.tabs__item {
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+.tabs__item:visited {
+    color: inherit;
+}
+
+.tabs__item:hover {
+    background-color: $primary-color;
+}
+
+.tabs__item.active {
+    background-color: $primary-color;
+}
+
+.tabs__block {
+    position: relative;
+    display: none;
+    padding-bottom: 20px;
+}
+
+.tabs__block.active {
+    display: block;
+}
+
+.tabs__block:before {
+    content: "";
+    height: 50px;
+    width: 50%;
+    position: absolute;
+    top: -50px;
+}
+
+.tabs__block:nth-child(1) {
+    background-color: white;
+}
+
+.tabs__block:nth-child(1):before {
+    background-color: white;
+    left: 0;
+}
+
+.tabs__block:nth-child(2) {
+    background-color: white;
+}
+
+.tabs__block:nth-child(2):before {
+    background-color: white;
+    left: 50%;
+}
+
+.tab__dropdown {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 100%;
+    border: 1px solid #dee2e6;
+    border-radius: 0 8px 8px 0;
+    box-sizing: border-box;
+}
+
+.tab__dropdown-toggle {
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.tab__dropdown-toggle:after {
+    content: '\25BC';
+    display: inline-block;
+    color: #333;
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.tab__dropdown:hover .tab__dropdown-toggle:after {
+    transform: rotate(90deg);
+}
+
+.tab__dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.tab__dropdown-item {
+    padding: 5px 0;
+    text-decoration: none;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin: 5px 5px;
+    font-size: 14px;
+    background-color: #dee2e6;
+}
+
+.tab__dropdown-item:hover {
+    background-color: $primary-color;
+}
+
+.tab__dropdown-item:visited {
+    color: inherit; 
+}
+
+.tab__dropdown:hover .tab__dropdown-menu {
+    display: block;
+}

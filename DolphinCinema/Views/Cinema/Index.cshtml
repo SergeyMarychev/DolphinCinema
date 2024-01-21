@@ -1,0 +1,48 @@
+﻿@using DolphinCinema.Models.Cinemas;
+@model CinemaViewModel
+
+@{
+    ViewData["Title"] = "Кинотеатр";
+    ViewBag.CurrentPage = PageNames.Cinema;
+}
+
+@section UpperMenu{
+    <vc:slider />
+}
+
+<div class="cinema">
+    <div class="cinema__container">
+        <h2 class="cinema__title">О КИНОТЕАТРЕ:</h2>
+        <div class="cinema__description">@Model.AboutCinema</div>
+    </div>
+
+    <div class="cinema__container">
+        <h2 class="cinema__title">РЕКВИЗИТЫ:</h2>
+        <div class="cinema__description">@Model.BankData</div>
+    </div>
+
+    <div class="cinema__container">
+        <h2 class="cinema__title">АДРЕС:</h2>
+        <div class="cinema__description">@Model.Address</div>
+    </div>
+
+    <div class="cinema__container">
+        <h2 class="cinema__title">КОНТАКТНЫЕ ДАННЫЕ:</h2>
+        <div class="cinema__description">@Model.Contacts</div>
+    </div>
+
+    <div class="cinema__container">
+        <h2 class="cinema__title">ВАЖНАЯ ИНФОРМАЦИЯ:</h2>
+        <div class="cinema__description">@Model.ImportantInformation</div>
+    </div>
+
+    <div class="cinema__gallery">
+        @foreach (var item in Model.Images)
+        {
+            <img class="cinema__image" src="@item" alt="" />
+        }
+    </div>
+</div>
+
+<script src="~/js/cinema.js" asp-append-version="true"></script>
+<script src="~/js/slider.js" asp-append-version="true"></script>

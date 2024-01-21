@@ -1,0 +1,610 @@
+<div class="card__container">
+	<div class="card__content">
+		<div class="card__img-container">
+			<img class="card__img"
+				 src="images/Parker.jpg"
+				 alt="" />
+			<div class="card__age-label">18+</div>
+		</div>
+		<h1 class="card__title">Паркер</h1>
+		<div class="card__genre-list">
+			<div class="card__genre-item">ПРИКЛЮЧЕНИЯ</div>
+			<div class="card__genre-item">БОЕВИК</div>
+			<div class="card__genre-item">ПРИКЛЮЧЕНИЯ</div>
+			<div class="card__genre-item">БОЕВИК</div>
+			<div class="card__genre-item">ПРИКЛЮЧЕНИЯ</div>
+		</div>
+		<div class="card__btn-list">
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="card__container">
+	<div class="card__content">
+		<div class="card__img-container">
+			<img class="card__img"
+					src="images/Predator.jpg"
+					alt="" />
+			<div class="card__age-label">18+</div>
+		</div>
+		<h1 class="card__title">Хищник</h1>
+		<div class="card__genre-list">
+			<div class="card__genre-item">ПРИКЛЮЧЕНИЯ</div>
+			<div class="card__genre-item">БОЕВИК</div>
+			<div class="card__genre-item">ФАНТАСТИКА</div>
+		</div>
+		<div class="card__btn-list">
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="card__container">
+	<div class="card__content">
+		<div class="card__img-container">
+			<img class="card__img"
+					src="images/Rambo 3.jpg"
+					alt="" />
+			<div class="card__age-label">18+</div>
+		</div>
+		<h1 class="card__title">Рэмбо 3</h1>
+		<div class="card__genre-list">
+			<div class="card__genre-item">ПРИКЛЮЧЕНИЯ</div>
+			<div class="card__genre-item">БОЕВИК</div>
+		</div>
+		<div class="card__btn-list">
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="card__container">
+	<div class="card__content">
+		<div class="card__img-container">
+			<img class="card__img"
+					src="images/Terminator.jpg"
+					alt="" />
+			<div class="card__age-label">18+</div>
+		</div>
+		<h1 class="card__title">Терминатор</h1>
+		<div class="card__genre-list">
+			<div class="card__genre-item">ПРИКЛЮЧЕНИЯ</div>
+			<div class="card__genre-item">БОЕВИК</div>
+			<div class="card__genre-item">ФАНТАСТИКА</div>
+		</div>
+		<div class="card__btn-list">
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="card__container">
+	<div class="card__content">
+		<div class="card__img-container">
+			<img class="card__img"
+					src="images/Parker.jpg"
+					alt="" />
+			<div class="card__age-label">18+</div>
+		</div>
+		<h1 class="card__title">Паркер</h1>
+		<div class="card__genre-list">
+			<div class="card__genre-item">ПРИКЛЮЧЕНИЯ</div>
+			<div class="card__genre-item">БОЕВИК</div>
+		</div>
+		<div class="card__btn-list">
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="card__container">
+	<div class="card__content">
+		<div class="card__img-container">
+			<img class="card__img"
+					src="images/Predator.jpg"
+					alt="" />
+			<div class="card__age-label">18+</div>
+		</div>
+		<h1 class="card__title">Хищник</h1>
+		<div class="card__genre-list">
+			<div class="card__genre-item">ПРИКЛЮЧЕНИЯ</div>
+			<div class="card__genre-item">БОЕВИК</div>
+			<div class="card__genre-item">ФАНТАСТИКА</div>
+		</div>
+		<div class="card__btn-list">
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="card__container">
+	<div class="card__content">
+		<div class="card__img-container">
+			<img class="card__img"
+					src="images/Rambo 3.jpg"
+					alt="" />
+			<div class="card__age-label">18+</div>
+		</div>
+		<h1 class="card__title">Рэмбо 3</h1>
+		<div class="card__genre-list">
+			<div class="card__genre-item">ПРИКЛЮЧЕНИЯ</div>
+			<div class="card__genre-item">БОЕВИК</div>
+		</div>
+		<div class="card__btn-list">
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="card__container">
+	<div class="card__content">
+		<div class="card__img-container">
+			<img class="card__img"
+					src="images/Terminator.jpg"
+					alt="" />
+			<div class="card__age-label">18+</div>
+		</div>
+		<h1 class="card__title">Терминатор</h1>
+		<div class="card__genre-list">
+			<div class="card__genre-item">ПРИКЛЮЧЕНИЯ</div>
+			<div class="card__genre-item">БОЕВИК</div>
+			<div class="card__genre-item">ФАНТАСТИКА</div>
+		</div>
+		<div class="card__btn-list">
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+
+			<div class="card__btn-container">
+				<button class="card__btn">
+					<div class="card__btn-time">12:00</div>
+					<div class="card__btn-details">
+						<div class="card__btn-text">2D</div>
+						<div class="card__btn-price">
+							150 руб.
+						</div>
+					</div>
+				</button>
+				<div class="card__btn-hall">Зал 1</div>
+			</div>
+		</div>
+	</div>
+</div>

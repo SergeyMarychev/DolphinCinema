@@ -1,0 +1,139 @@
+﻿@{
+    ViewData["Title"] = "Зал";
+}
+
+<div class="hall">
+    <h2 class="hall__form-title">Управление залами</h2>
+
+    <div class="tabs">
+        <nav class="tabs__items">
+            <button class="tabs__item active" data-target="#tab__create">Создать зал</button>
+            <button class="tabs__item" data-target="#tab__edit">Редактировать зал</button>
+        </nav>
+        <div class="tabs__body">
+            <div class="tabs__block active" id="tab__create">
+                <div class="name__input-group">
+                    <span class="name__input-text">Введите название зала</span>
+                    <vc:input id="name__input" />
+                </div>
+                <div class="name__input-errorMessage"></div>
+
+                <div class="size__input-group">
+                    <span class="name__input-text">Введите размер зала</span>
+                    <vc:input id="size__input_row" placeholder="Количество рядов" type="number"/>
+                    <div class="size__input-imgContainer">
+                        <img class="size__input-img" src="~/images/Popup__exit.png" />
+                    </div>
+                    <vc:input id="size__input_seat" placeholder="Количество мест" type="number"/>
+                    <button class="size__input-btn" id="createHall">Создать</button>
+                </div>
+                <div class="size__input-errorMessage"></div>
+
+                <div class="hallPreview__wrapper d-none">
+                    <div class="hall__preview"></div>
+                    <button class="hall__save-btn" id="createHallSave">Сохранить</button>
+                </div>
+                
+            </div>
+
+            <div class="tabs__block" id="tab__edit">
+                <div class="name__input-group">
+                    <span class="name__input-text">Выберите зал</span>
+                    <ul>
+                        <li class="tab__dropdown">
+                            <a class="tab__dropdown-toggle" href="#">Зал 1</a>
+                            <ul class="tab__dropdown-menu">
+                                <li><a class="tab__dropdown-item" href="#">Зал 1</a></li>
+                                <li><a class="tab__dropdown-item" href="#">Зал 2</a></li>
+                                <li><a class="tab__dropdown-item" href="#">Зал 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div class="name__input-group">
+                    <span class="name__input-text">Введите название зала</span>
+                    <vc:input id="name__input" />
+                </div>
+                <div class="size__input-group">
+                    <span class="name__input-text">Введите размер зала</span>
+                    <vc:input id="size__input_row" placeholder="Количество рядов" type="number"/>
+                    <div class="size__input-imgContainer">
+                        <img class="size__input-img" src="~/images/Popup__exit.png" />
+                    </div>
+                    <vc:input id="size__input_seat" placeholder="Количество мест" type="number"/>
+                    <btn class="size__input-btn">Создать</btn>
+                </div>
+                <div class="hall__grid">
+                    <div class="display">Экран</div>
+                    <div class="hall__template">
+                        <div class="row">
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                        </div>
+                        <div class="row">
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                        </div>
+                        <div class="row">
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                        </div>
+                        <div class="row">
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                        </div>
+                        <div class="row">
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                        </div>
+                    </div>                    
+                </div>
+                <button class="hall__save-btn">Сохранить</button>
+                <button class="hall__delete-btn">Удалить</button>
+            </div>
+        </div>
+    </div>         
+</div>
+
+<script src="~/js/createHall.js" asp-append-version="true" type="module"></script>

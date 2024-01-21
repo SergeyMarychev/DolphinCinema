@@ -1,0 +1,37 @@
+﻿.eventItem {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: white;
+        border-radius: 8px;
+    }
+
+    &__date {
+        margin: 25px 40px 15px 40px;
+        color: black;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &__image {
+        margin: 0 40px 15px 40px;
+        width: 500px;
+        height: 100%;
+        border-radius: 8px;
+    }
+
+    &__display-name {
+        margin: 0 40px 10px 40px;
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    &__description {
+        margin: 0 40px 25px 40px;
+        color: black;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}

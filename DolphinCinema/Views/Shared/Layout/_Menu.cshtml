@@ -1,0 +1,75 @@
+﻿<nav class="menu">
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a asp-controller="Home" asp-action="Index"
+			   class="menu__link @(ViewBag.CurrentPage == PageNames.Home ? "active" : "")">Афиша</a>
+		</li>
+		<li class="menu__item">
+			<a asp-controller="Seance" asp-action="Index"
+			   class="menu__link @(ViewBag.CurrentPage == PageNames.Seance ? "active" : "")">Сеансы</a>
+		</li>
+		<li class="menu__item">
+			<a href="#"
+			   class="menu__link">Пушкинская карта</a>
+		</li>
+		<li class="menu__item">
+			<a asp-controller="Event" asp-action="Index"
+			   class="menu__link @(ViewBag.CurrentPage == PageNames.Event ? "active" : "")">Новости</a>
+		</li>
+		<li class="menu__item">
+			<a asp-controller="Promo" asp-action="Index"
+			   class="menu__link @(ViewBag.CurrentPage == PageNames.Promo ? "active" : "")">Акции и скидки</a>
+		</li>
+		<li class="menu__item">
+			<a asp-controller="Cinema" asp-action="Index"
+	           class="menu__link @(ViewBag.CurrentPage == PageNames.Cinema ? "active" : "")">Кинотеатр</a>
+		</li>
+		@*<li class="menu__item">
+			<a href="#"
+			   class="menu__link">Контакты</a>
+		</li>*@		
+		<li class="menu__item feedback__btn">Написать отзыв</li>
+	</ul>	
+
+	<div class="popup" hidden>
+		<div class="popup__overlay"></div>
+		<div class="popup__container">
+			<div class="popup__content">
+				<div class="popup__content-container">
+					<div>
+						<div class="popup__content-header">
+							Написать отзыв
+							<div class="popup__exit" id="popupExit">
+								<img class="popup__exit-img" src="~/images/Popup__exit.png" />
+							</div>
+						</div>
+						<div class="popup__content-body">
+							<div class="popup__content-description">Поделитесь своими впечатлениями от похода в наш кинотеатр. Ваш отзыв поможет нам стать лучше. Мы свяжемся с вами при необходимости.</div>
+							<div class="popup__content-form">
+								<div class="popup__content-name">Имя*</div>
+								<div class="popup__content-inputContainer">
+									<input class="input" autocomplete="off" name="name" placeholder="Ваше имя" type="text" value="" />
+								</div>
+							</div>
+							<div class="popup__content-form">
+								<div class="popup__content-name">Ваш email*</div>
+								<div class="popup__content-inputContainer">
+									<input class="input" autocomplete="off" name="contact" placeholder="Ваш email" type="text" value="" />
+								</div>
+							</div>
+							<div class="popup__content-form">
+								<div class="popup__content-name">Текст сообщения*</div>
+								<textarea class="textarea" name="message" placeholder="Ваш отзыв" rows="1" wrap="soft" style="width: 100%;"></textarea>
+							</div>
+						</div>
+						<div class="popup__content-footer">
+							<button class="btn__cancel" id="btnCancel">Отменить</button>
+							<button class="btn__send" id="btnSend">Отправить</button>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+
+</nav>

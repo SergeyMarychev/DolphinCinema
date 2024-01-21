@@ -1,0 +1,40 @@
+﻿<nav class="menu">
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a asp-controller="Home" asp-action="Index"
+			   class="menu__link @(ViewBag.CurrentPage == PageNames.Home ? "active" : "")">Зал</a>
+		</li>
+		<li class="menu__item">
+			<a asp-controller="Seance" asp-action="Index"
+			   class="menu__link @(ViewBag.CurrentPage == PageNames.Seance ? "active" : "")">Сеанс</a>
+		</li>
+		<li class="menu__item">
+			<a asp-controller="" asp-action="Index"
+			   class="menu__link">Слайдер</a>
+		</li>
+		<li class="menu__item">
+			<a asp-controller="Event" asp-action="Index"
+			   class="menu__link @(ViewBag.CurrentPage == PageNames.Event ? "active" : "")">Фильм</a>
+		</li>
+		<li class="menu__item">
+			<a asp-controller="Promo" asp-action="Index"
+			   class="menu__link @(ViewBag.CurrentPage == PageNames.Promo ? "active" : "")">Акция и скидка</a>
+		</li>
+		<li class="menu__item">
+			<a asp-controller="Cinema" asp-action="Index"
+	           class="menu__link @(ViewBag.CurrentPage == PageNames.Cinema ? "active" : "")">Новость</a>
+		</li>
+		<li class="menu__item">
+			<a asp-controller="Cinema" asp-action="Index"
+			   class="menu__link @(ViewBag.CurrentPage == PageNames.Cinema ? "active" : "")">Кинотеатр</a>
+		</li>
+		<li class="menu__item">
+			<a asp-controller="Cinema" asp-action="Index"
+			   class="menu__link @(ViewBag.CurrentPage == PageNames.Cinema ? "active" : "")">Шапка сайта</a>
+		</li>
+		<li class="menu__item">
+			<a asp-controller="Cinema" asp-action="Index"
+			   class="menu__link @(ViewBag.CurrentPage == PageNames.Cinema ? "active" : "")">Пользователь</a>
+		</li>
+	</ul>	
+</nav>

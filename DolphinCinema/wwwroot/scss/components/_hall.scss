@@ -1,0 +1,228 @@
+﻿.hall {
+    background-color: white;
+    padding: 0 40px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 8px;
+}
+
+.hall__form-title {
+    margin: 20px 0 40px 0;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.name__input-group {
+    display: flex;
+}
+
+.name__input-text {
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px 0 0 8px;
+    border-right: none;
+    width: 200px;
+    text-align: start;
+}
+
+#name__input {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #dee2e6;
+    border-radius: 0 8px 8px 0;
+    box-sizing: border-box;
+}
+
+#name__input:focus {
+    border: 2px solid $primary-color;
+    outline: none;
+}
+
+.size__input-group {
+    display: flex;
+}
+
+#size__input_row {
+    width: 150px;
+    padding: 8px;
+    border: 1px solid #dee2e6;
+    box-sizing: border-box;
+}
+
+#size__input_row::placeholder {
+    color: #dee2e6;
+    font-style: italic;
+}
+
+#size__input_row:focus::placeholder {
+    color: transparent; 
+}
+
+#size__input_row:focus {
+    border: 2px solid $primary-color;
+    outline: none;
+}
+
+.size__input-imgContainer {
+    width: 42px;
+    height: 42px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.size__input-img {
+    width: 15px;
+    height: 15px;
+}
+
+#size__input_seat {
+    width: 150px;
+    padding: 8px;
+    border: 1px solid #dee2e6;
+    box-sizing: border-box;
+}
+
+#size__input_seat::placeholder {
+    color: #dee2e6;
+    font-style: italic;
+}
+
+#size__input_seat:focus::placeholder {
+    color: transparent;
+}
+
+#size__input_seat:focus {
+    border: 2px solid $primary-color;
+    outline: none;
+}
+
+.size__input-btn {
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    text-align: center;
+    white-space: nowrap;
+    background-color: $primary-color;
+    border: 1px solid #dee2e6;
+    border-radius: 0 8px 8px 0;
+    border-left: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.size__input-btn:hover {
+    background-color: $primary-color-plus;
+    border: 1px solid $primary-color-plus;
+    font-weight: 500;
+}
+
+.size__input-errorMessage {
+    font-size: 12px;
+    color: red;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.name__input-errorMessage {
+    font-size: 12px;
+    color: red;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.hall__grid {
+    margin: 30px 0;
+    padding: 30px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.display {
+    display: flex;
+    height: 40px;
+    border: 1px solid #dee2e6;
+    background-color: #f8f9fa;
+    color: #bbb;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.row:last-child {
+    margin-bottom: 0;
+}
+
+.seat {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #dee2e6;
+    margin-right: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.seat.active {
+    background-color: $primary-color;
+    border: 1px solid $primary-color-plus;
+}
+
+.seat:last-child {
+    margin-right: 0;
+}
+
+.hall__save-btn,
+.hall__delete-btn {
+    width: 120px;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    white-space: nowrap;
+    background-color: $primary-color;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+    transition: background-color 0.5s ease;
+}
+
+.hall__save-btn:last-child,
+.hall__delete-btn:last-child {
+    margin-right: 0;
+}
+
+.hall__save-btn:hover,
+.hall__delete-btn:hover {
+    background-color: $primary-color-plus;
+    border: 1px solid $primary-color-plus;
+    font-weight: 500;
+}

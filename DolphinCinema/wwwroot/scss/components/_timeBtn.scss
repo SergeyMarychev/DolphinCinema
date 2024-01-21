@@ -1,0 +1,19 @@
+.timeBtn {
+	&.btn {
+		width: 100%;
+		height: 45px;
+		margin: 0 10px 0 0;
+
+		&:last-child {
+			margin: 0;
+		}
+
+		&__link {
+			&.btn__link {
+				font-weight: 500;
+				font-size: 13px;
+				text-transform: none;
+			}
+		}
+	}
+}

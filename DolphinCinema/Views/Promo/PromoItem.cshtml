@@ -1,0 +1,24 @@
+﻿@using DolphinCinema.Models.Promos;
+@model PromoItemViewModel
+
+@{
+    ViewData["Title"] = "Акции и скидки";
+}
+
+@section UpperMenu{
+    <vc:slider />
+}
+
+<div class="promoItem__container">    
+    <img class="promoItem__image" src="@Model.PathToImage" alt="">
+    <div class="promoItem__content">
+        @if (Model.DateStart.HasValue && Model.DateEnd.HasValue)
+        {
+            <div class="promoItem__date">Акция действует с @Model.DateStart?.ToShortDateString() по @Model.DateEnd?.ToShortDateString()</div>
+        }        
+        <div class="promoItem__display-name">@Model.DisplayName</div>
+        <div class="promoItem__description">@Model.Description</div>
+    </div>
+</div>
+
+<script src="~/js/slider.js" asp-append-version="true"></script>

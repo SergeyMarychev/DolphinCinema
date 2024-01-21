@@ -1,0 +1,44 @@
+﻿@using DolphinCinema.Views.Shared.Components.Events
+@model EventsViewModel
+
+@{
+	bool showAllTitle = ViewBag.ShowAllTitle;
+}
+
+<div class="event">
+	<div class="event__headline">
+		<p class="event__headline-title">Новости</p>
+		@if (showAllTitle)
+		{
+			<a asp-controller="Event" asp-action="Index"
+				class="event__all-title @(ViewBag.CurrentPage == PageNames.Event ? "active" : "")">Показать все</a>
+		}
+	</div>	
+	<div class="event__container">
+		@foreach (var item in Model.Items)
+		{
+			<div class="event__card">
+				<a class="event__link" asp-action="EventItem" asp-controller="Event" asp-route-name="@item.Name">
+					<div class="event__img-card">
+						<img class="event__img"
+							 src="@item.PathToImage"
+						     alt=""/>
+					</div>
+				</a>
+					<div class="event__item">
+						<p class="event__date">@item.Date.ToShortDateString()</p>
+					<a class="event__link" asp-action="EventItem" asp-controller="Event" asp-route-name="@item.Name">
+						<h1 class="event__title">@item.DisplayName</h1>
+					</a>						
+						<p class="event__content">@item.Description</p>
+						<div class="readMoreBtn btn">
+						<a class="readMoreBtn__link btn__link event__link" 
+							asp-action="EventItem" 
+							asp-controller="Event" 
+							asp-route-name="@item.Name">Читать далее</a>
+						</div>
+					</div>								
+			</div>
+		}
+	</div>
+</div>

@@ -1,0 +1,26 @@
+﻿@using DolphinCinema.Views.Shared.Components.Slider
+@model IEnumerable<string>
+
+<div class="slider">
+	@foreach(var item in Model)
+	{
+		<div class="slider__item">
+			<img class="slider__img"
+					src="@item"
+					alt="" />
+		</div>
+	}
+	
+<div class="pagination">
+	@foreach(var item in Model)
+	{
+		<div class="pagination__line"></div>
+	}
+</div>
+<div class="pagination__arrow pagination__arrow-left">
+	&lt;
+</div>
+<div class="pagination__arrow pagination__arrow-right">
+	&gt;
+</div>
+</div>

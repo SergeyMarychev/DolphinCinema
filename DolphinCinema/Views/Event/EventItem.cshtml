@@ -1,0 +1,19 @@
+﻿@using DolphinCinema.Models.Events;
+@model EventItemViewModel
+
+@{
+    ViewData["Title"] = "Новости";
+}
+
+@section UpperMenu{
+    <vc:slider />
+}
+
+<div class="eventItem__container">
+    <div class="eventItem__date">Опубликовано @Model.Date?.ToShortDateString()</div>
+    <img class="eventItem__image" src="@Model.PathToImage" alt="">
+    <div class="eventItem__display-name">@Model.DisplayName</div>
+    <div class="eventItem__description">@Model.Description</div>
+</div>
+
+<script src="~/js/slider.js" asp-append-version="true"></script>

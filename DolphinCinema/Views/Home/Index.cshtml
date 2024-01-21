@@ -1,0 +1,23 @@
+﻿@using DolphinCinema.Models.Home;
+@model PosterViewModel
+
+@{
+	ViewData["Title"] = "Афиша";
+	ViewBag.CurrentPage = PageNames.Home;
+}
+
+@section UpperMenu{
+	<vc:slider/>
+}
+
+@await Html.PartialAsync("_Poster")
+
+<vc:promos/>
+<vc:events is-show-all="false"/> 
+
+@section Scripts {
+<script src="~/js/slider.js" asp-append-version="true"></script>
+<script src="~/js/time.js" asp-append-version="true"></script>
+<script src="~/js/event.js" asp-append-version="true"></script>
+<script src="~/js/views/home/index.js" asp-append-version="true"></script>
+}

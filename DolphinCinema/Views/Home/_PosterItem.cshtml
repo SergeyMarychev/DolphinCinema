@@ -1,0 +1,35 @@
+﻿@using DolphinCinema.Models.Home;
+@model PosterItemViewModel
+
+<div class="poster__container">
+	<div class="poster__content">
+		<div class="poster__img-container">
+			<img class="poster__img"
+				 src="@Model.PathToImage"
+				 alt="" />
+			<div class="poster__age-label">@Model.AgeLable+</div>
+		</div>
+		<h1 class="poster__title">@Model.Title</h1>
+		<div class="poster__genre-list">
+			@foreach (var item in Model.Genres)
+			{
+				<div class="poster__genre-item">@item</div>
+			}
+		</div>
+		<div class="poster__btn-list">
+			@foreach (var item in Model.Seances)
+			{
+				<div class="poster__btn-container">
+					<button class="poster__btn" data-seance-id="@item.Id">
+						<div class="poster__btn-time">@item.Time</div>
+						<div class="poster__btn-details">
+							<div class="poster__btn-text">@item.Format</div>
+							<div class="poster__btn-price">@item.Price руб.</div>
+						</div>
+					</button>
+					<div class="poster__btn-hall">@item.Hall</div>
+				</div>
+			}
+		</div>
+	</div>
+</div>

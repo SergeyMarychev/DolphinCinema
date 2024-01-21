@@ -1,0 +1,43 @@
+.header {
+	margin: 0;
+	min-height: 120px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__content-left {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-left: 40px;
+	}
+
+	&__content-right {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-right: 40px;
+	}
+
+	&__icons {
+		margin-right: 10px !important;
+
+		&:last-child {
+			margin-right: 0 !important;
+		}
+	}
+
+	&__layer {
+		width: 20px !important;
+		height: 20px !important;
+	}
+
+	&__text {
+		font-size: 8px !important;
+	}
+}
+
+span.header__fab {
+	font-size: 15px !important;
+	line-height: 20px !important;
+}

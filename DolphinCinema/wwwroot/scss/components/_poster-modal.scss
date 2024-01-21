@@ -1,0 +1,67 @@
+﻿.poster-modal {
+    &__date {
+        font-weight: 400;
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .poster__btn-list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .hall__grid {
+        width: 100%;
+    }
+
+    .seat {
+        transition: border-radius linear 200ms;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $primary-color;
+
+        &:hover {
+            border-radius: 50%;
+        }
+
+        &:hover .seat__number {
+            opacity: 1;
+            font-size: 22px;
+        }
+
+        &__number {
+            opacity: 0;
+            transition: opacity linear 200ms;
+        }
+
+        &.active {
+            background-color: $primary-color-plus;
+            border-radius: 50%;
+
+            .seat__number {
+                opacity: 1;
+                color: white;
+                font-size: 22px;
+            }
+        }
+
+        &.disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+    }
+
+    .btn {
+        width: 200px;
+
+        &__link {
+            color: black;
+        }
+    }
+}
